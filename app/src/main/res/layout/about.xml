@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/about"
+    android:stretchColumns="*" xmlns:tools="http://schemas.android.com/tools">
+
+    <TableRow android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/aboutIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:linksClickable="true"
+            />
+
+    </TableRow>
+
+    <ScrollView
+        android:id="@+id/ScrollView1"
+        android:layout_height="100dp" >
+
+        <TextView
+            android:id="@+id/legal_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:linksClickable="true"
+            android:scrollbars="vertical"
+            android:textColor="#cccccc"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </ScrollView>
+
+</TableLayout>
